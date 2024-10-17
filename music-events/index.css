@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EBF2FF;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 80%;
+    gap : 1rem;
+}
+
+.taylor{
+    display: flex;
+    border-radius: 1rem;
+    background-color: white;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.date1, .date2, .date4, .date3{
+    display: flex;
+    flex-direction: column;
+    /* background-color: #F7DAD4; */
+    padding: 1.1rem 0;
+    border-radius: 1rem;
+    text-align: center;
+    gap: 0.5rem;
+    width: 9rem;
+}
+
+.date1{
+    background-color: #F7DAD4;
+}
+
+.date2{
+    background-color: #EDF7D4;
+}
+
+.date3{
+    background-color:#D3E6F6;
+}
+
+.date4{
+    background-color: #E1D4F8;
+}
+
+
+.hour{
+    font-size: 2rem;
+    font-weight: 580;
+}
+
+.day{
+    font-weight: 580;
+}
+
+
+.status{
+    margin-left: auto;
+    display: flex;
+    gap: 0.5rem;
+    /* font-weight: 600; */
+}
+
+.status_out{
+    font-size: 1.2rem;
+    padding: 2rem;
+    font-weight: 600;
+    border-radius: 1rem;
+}
+
+.event{
+    gap: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: 570;
+}
+
+.icon{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.icon:hover{
+    scale: 1.1;
+}

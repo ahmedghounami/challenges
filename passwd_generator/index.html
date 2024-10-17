@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>passwd-generator</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">Generate password</h1>
+      <div class="password-display">
+        <p class="header">GENERATED PASSWORD</p>
+        <input class="generated" type="text" value="" id="password" readonly />
+        <ion-icon id="copy" name="copy-outline" onclick="copytext()" ></ion-icon>
+        <ion-icon id="generate" name="reload-outline" onclick="random_pass()"></ion-icon>
+      </div>
+      <div class="length">
+        <p class="header">CHARACTER LENGTH:</p>
+        <span class="length-value">12</span>
+        <div class="range_container">
+          <span class="length_span">12</span>
+          <input
+            class="range"
+            type="range"
+            min="8"
+            max="32"
+            value="12"
+            oninput="updateLength()"
+          />
+          <span>32</span>
+        </div>
+      </div>
+      <div class="settings">
+        <p class="header">SETTINGS</p>
+        <label class="param" for="slider">
+          Include uppercase letters
+          <div class="uppercase">
+            <div class="circle">
+              <input type="checkbox" id="slider" onclick="toggleSlider()" />
+            </div>
+          </div>
+        </label>
+        <label class="param" for="slider2">
+          Include lowercase letters
+          <div class="lowercase">
+            <div class="circle">
+              <input type="checkbox" id="slider2" onclick="toggleLowercase()" />
+            </div>
+          </div>
+        </label>
+        <label class="param" for="slider3">
+          Include numbers
+          <div class="numbers">
+            <div class="circle">
+              <input type="checkbox" id="slider3" onclick="toggleNumbers()" />
+            </div>
+          </div>
+        </label>
+        <label class="param" for="slider4">
+          Include symbols
+          <div class="symbols">
+            <div class="circle">
+              <input type="checkbox" id="slider4" onclick="toggleSymbols()" />
+            </div>
+          </div>
+        </label>
+      </div>
+      <button class="generate_button" onclick="random_pass()">Generate Password</button>
+    </main>
+  </body>
+</html>

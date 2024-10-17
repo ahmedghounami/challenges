@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>create-account</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      function change_icon() {
+        var x = document.getElementById("4");
+        var icon = document.querySelector(".eye");
+        if (x.type === "password") {
+          icon.name = "eye-off";
+          x.type = "text";
+        } else {
+          icon.name = "eye";
+          x.type = "password";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main class="container">
+      <form class="content">
+        <p class="start">START FOR FREE</p>
+       <div class="title" >
+        <h1 class="title1">Create <h1 class="title2">new</h1>  </h1> <h1 class="title3">account</h1>
+       </div>
+        <div class="name_lastname">
+          <div class="first_name">
+            <label class="headername" for="1">First name</label>
+            <input class="input_" id="1" type="text" required />
+              <ion-icon class="icon" name="person-circle"></ion-icon>
+          </div>
+          <div class="last_name">
+            <label class="headername" for="2">Last name</label>
+            <input class="input_" id="2" type="text" required />
+                <ion-icon class="icon" name="person-circle"></ion-icon>
+          </div>
+        </div>
+
+        <div class="email">
+          <label class="headername" for="3">Email</label>
+          <input class="input_" id="3" type="email" required />
+          <ion-icon class="icon" name="mail"></ion-icon>
+        </div>
+        <div class="password">
+          <label style="color: rgb(0, 94, 255)" class="headername" for="4"
+            >Password</label
+          >
+          <input class="input_" class="4" id="4" type="password" required />
+            <ion-icon
+              class="icon eye"
+              name="eye"
+              onclick="change_icon()"
+            ></ion-icon
+          >
+        </div>
+
+        <p class="start">
+          Already have an account? <a href="#" class="link">Sign In</a>
+        </p>
+        <button class="button">Create account</button>
+      </form>
+    </main>
+  </body>
+</html>

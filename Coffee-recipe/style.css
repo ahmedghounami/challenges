@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    max-width: 1200px;
+    /* max-height: 1000px; */
+    /* overflow: scroll; */
+}
+
+.left{
+    width: 45%;
+}
+
+.right{
+    padding-left: 2%;
+    padding-top: 230px;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.atributes{
+    display: flex;
+    gap: 20px;
+}
+
+.atributes p{
+    font-size: 13px;
+}
+
+.time{
+    color : #ff9900;
+}
+
+.first-at, .second-at, .last-at{
+    display: flex;
+    gap: 8px;
+}
+
+.paragraph
+{
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.ingredients
+{
+    margin-top: 20px;
+    list-style: none;
+}
+
+.first_list{    
+    display: flex;
+    gap: 10px;
+}
+.instructions
+{
+    padding : 20px;
+}
+
+.instructions li, .ingredients li{
+    padding: 5px;
+    color :#6a6363;
+}
+
+ion-icon{
+    font-size: 30px;
+    color :#6a6363;
+}
+
+input[type="checkbox"], label{
+    accent-color: #F3A72A;
+    cursor: pointer;
+}
+
+.header{
+    position:absolute;
+    padding: 20px;
+    background-color: #ffffff;
+    left : 30%;
+    top : 5vh;
+    padding-left: 40px;
+    padding-top: 15px;
+
+}
+
+.start{
+    color: #FAA519;
+    font-size: 20px;
+}
+
+.title{
+    font-size: 35px;
+}
+
+.line-starts{
+    display: flex;
+    gap: 10px;
+}
+
+.bottom{
+    position:absolute;
+    padding: 15px;
+    background-color: #000000;
+    color: #B17431;
+    bottom : 10px;
+}
+
+.btm-sweet{
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .left{
+        width: 100%;
+        position: relative;
+    }
+
+    .right{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header{
+        z-index: 1;
+        left: 0;
+        top: 0;
+        padding: 10px;
+    }
+    .title{
+        font-size: 20px;
+    }
+}
+
+

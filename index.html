@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Frontend Challenges</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function opennew(url) {
+            // open in another tab
+            window.open(url, '_blank')
+
+        }
+    </script>
+</head>
+<!-- class="bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0,100,180,1),rgba(60,60,120,1),rgba(125,165,300,1))] " -->
+<body >
+    <header>
+        <img src="https://cdn.intra.42.fr/users/e09aa2e5981607d23874091450ae40c1/aghounam.jpg" alt="profile picture">
+        <h1>Welcome to See All My Challenges</h1>
+    </header>
+
+    <div class="container">
+        <section class="challenge-grid">
+            <div class="challenge-card " onclick="opennew('create-account/index.html')">
+                <h2>Challenge 1: Responsive Portfolio</h2>
+                <iframe src="create-account/index.html" frameborder="0" class="challenge-iframe"></iframe>
+                <p><strong>Technologies:</strong> HTML, CSS, Flexbox</p>
+            </div>
+
+            <div class="challenge-card" onclick="opennew('Log-in-page/index.html')">
+                <h2>Challenge 2: JavaScript Calculator</h2>
+                <iframe src="Log-in-page/index.html" frameborder="0" class="challenge-iframe"></iframe>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            </div>
+
+            <div class="challenge-card" onclick="opennew('Coffee-recipe/index.html')">
+                <h2>Challenge 3: CSS Grid Layout</h2>
+                <iframe src="Coffee-recipe/index.html" frameborder="0" class="challenge-iframe"></iframe>
+                <p><strong>Technologies:</strong> HTML, CSS, Grid</p>
+            </div>
+            <div class="challenge-card" onclick="opennew('music-events/index.html')">
+                <h2>Challenge 3: CSS Grid Layout</h2>
+                <iframe src="music-events/index.html" frameborder="0" class="challenge-iframe"></iframe>
+                <p><strong>Technologies:</strong> HTML, CSS, Grid</p>
+            </div>
+            <div class="challenge-card" onclick="opennew('passwd_generator/index.html')">
+                <h2>Challenge 3: CSS Grid Layout</h2>
+                <iframe src="passwd_generator/index.html" frameborder="0" class="challenge-iframe"></iframe>
+                <p><strong>Technologies:</strong> HTML, CSS, Grid</p>
+            </div>
+            <div class="challenge-card" onclick="opennew('pictures/index.html')">
+                <h2>Challenge 3: CSS Grid Layout</h2>
+                <iframe src="pictures/index.html" frameborder="0" class="challenge-iframe"></iframe>
+                <p><strong>Technologies:</strong> HTML, CSS, Grid</p>
+            </div>
+    
+        </section>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    overflow-x : hidden;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    overflow: hidden;
+
+}
+
+.displayed{
+    max-width: 100rem;
+    max-height: 100rem;
+    margin : 20rem;
+    position: relative;
+    justify-content: center;
+    transition: 0.7s;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 5rem;
+}
+
+
+.images img{
+    width: 25rem;
+    height: 18rem;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: all 0.5s;
+
+}
+
+.picture:hover{
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+
+.selected{
+    box-shadow: 0rem 0rem 2rem #ffffff ;
+    opacity: 0.6;
+    transform: scale(1.4);
+    margin: 0 3rem;
+    transition: all 1s;
+}
+
+.selected:hover{
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.prev, .next{
+    position: absolute;
+    font-size: 5rem;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #000000;
+    border: none;
+    top: 50%;
+    transition: all 0.7s;
+}
+
+.prev{
+    left: -2.5em;
+}
+
+.next{
+    right: -2.5em;
+}
+
+.prev:hover, .next:hover{
+    transform: scale(1.4);
+}
+
+.displayed-image{
+    width: 74rem;
+    height: 50rem;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 2rem;
+    opacity: 1;
+    transition: all 0.7s;
+}
+
+@media screen and (max-width: 1000px){
+    html{
+        font-size: 45%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    html{
+        font-size: 25%;
+    }
+
+    
+    .next , .prev{
+        font-size: 10rem;
+    }
+
+    .prev{
+        left: -1.2em;
+    }
+    
+    .next{
+        right: -1.2em;
+    }
+}
